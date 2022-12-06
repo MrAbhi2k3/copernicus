@@ -136,9 +136,9 @@ nav img{
     display:none;
 }
 
-/* Course */
+/* Projects */
 
- .course{
+ .projects{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -160,7 +160,7 @@ p{
     display: flex;
     justify-content: space-between;
 }
-.course-col{
+.projects-col{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -174,30 +174,32 @@ h3{
     font-weight: 600;
     margin: 10px 0px;
 }
-.course-col:hover{
+.projects-col:hover{
     box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.4);
 }
 
 
-    /*Campus*/
+    /*Mentors*/
 
-
-.campus{
+.mentors{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    color: #000000;
 }
-.campus-col{
+.mentors-col{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-.campus-col img{
+.mentors-col img{
     width: 100%;
     display: block;
+    border: 4px;
+    
 }
 .layer{
     background: transparent;
@@ -233,62 +235,83 @@ h3{
     bottom: 49%;
 }
 
-/* Facilities */
+/* Cordinator */
 
-.facilities{
+.coordinator{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
-.facilities-col{
+.coordinator-col{
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
 }
-.facilities-col img{
-    width: 100%;
-    border-radius: 10px;
-    transition: 0.5s;
+.coordinator-col img{
+  border-radius: 150px;
+  border: 2px solid #62cce6;
+  height: 150px;
+  width: 150px;
 }
-.facilities-col p{
+.coordinator-col p{
+    padding: 0%;
+}
+.coordinator-row img{
+  border-radius: 150px;
+  border: 2px solid #62cce6;
+  height: 150px;
+  width: 150px;
+}
+.coordinator-row p{
     padding: 0%;
 }
 
-.facilities-col h3{
+.coordinator-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
 }
 
-.facilities-col img:hover{
+.coordinator-row h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.coordinator-col img:hover{
     box-shadow: 3.5px 5px 15px 10px rgba(0, 0, 0, 0.308);
 }
+.coordinator-row img:hover{
+    box-shadow: 3.5px 5px 15px 10px rgba(0, 0, 0, 0.308);
+}
+
+/*.coordinator-col{
+  display: flex;
+  flex-direction: row;
+}
+
+.coordinator-row{
+  display: flex;
+  flex-direction: row;
+}*/
 
 /* Call To Action */
 
 .ctn{
     margin: 100px auto;
-    width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/footer.jpeg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 50px;
-    text-align: center;
-    padding: 0px 0;
-    transition: 0.5s;
 }
 .ctn h1{
     color: #fff;
-    margin-bottom: 40px;
-    padding: 0;
+    margin-bottom: 4px;
+    padding: 2px;
 }
 .ctn:hover{
     margin: 100px auto;
     width: 80%;
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../image/footer.jpeg);
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../image/shriyansh.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -371,14 +394,241 @@ h3{
         box-shadow: 3px 3px 0.5px 0.5px rgba(0, 0, 0, 0.486);
     }
         /* Facilities */
-    .facilities-col img:hover{
+    .coordinator-col img:hover{
         box-shadow:none;
     }
 
     /* Call To Action in Media query*/
     .ctn h1{
-        font-size: 24px;
+        font-size: 14px;
     }
 }
 
+
+.section{
+  height: 250px;
+  display: flex;
+  max-width: 80%;
+  align-content: center;
+  justify-content: space-evenly;
+  margin: auto;
+  font-family: 'Bree Serif', serif;
+}
+
+.section-left{
+  flex-direction: row-reverse;
+}
+
+.paras{
+  padding: 0px 25px;
+}
+
+.sectionTag{
+  padding: 12px 5px;
+}
+
+.sectionSubTag{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Sans-Serif;
+}
+.thumbnail img{
+  width: 80px;
+  border: 4px solid #000000;
+  border-radius: 500px;
+  margin-top: 29px;
+}
+
+.firstHalf{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondHalf{
+  width: 50%;
+}
+
+.secondHalf img{
+  width: 200%;
+  border: 3px solid #f0f0f0;
+  border-radius: 200px;
+  display: block;
+  margin: auto;
+}
+
+.text-big{
+  font-size: 30px;
+  color: #121f23;
+}
+.text-small{
+  font-size: 15px;
+  color: #a2cff6;
+  border: 1px;
+}
+
+.mentorshead{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
 /* Media query is Close*/
+.logo a{
+    color: #ff00e6;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.logo a span{
+    color: #0016ff;
+    transition: all 0.3s ease;
+    font-size: 30px;
+}
+.logo a span{
+    color: #ff0000;
+}
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* LinkDin */
+.fa-linkedin {
+  border: 2px;
+  border-color: #000000;
+  color: #5790f0;
+}
+/* WhatsApp */
+.fa-whatsapp {
+  color: #47f065;
+}
+/* Instagram */
+.fa-instagram {
+  color: #ff00f3;
+}
+
+/* teams section styling 
+.teams .title::after{
+    content: "   Incharges";
+}*/
+
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: crimson;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    padding: 5px 6px;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+.teams .box-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    padding: 0px 10px;
+    color: #ffffff;
+}
+.teams .title{
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bree Serif', Serif;
+  font-size: 100%;
+  padding: 16px 12px;
+}
+
+.teams{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #000000;
+    margin-top: 2px;
+    
+}
+
+.teams .box .text-1{
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 7px;
+  color: #f4fcfe;
+}
+
+.teams .box-1 .text{
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 7px;
+  color: #f4fcfe;
+}
+.teams .card .box{
+  margin: 10px 0 7px 0;
+}
